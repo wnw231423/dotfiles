@@ -1,0 +1,42 @@
+
+# Note that the icon file is in /usr/share/pixmaps/Alacritty.svg, I replace it with another one looking better.
+
+[env]
+# Add environment variables here.
+
+[window]
+padding = {x = 10, y = 15}
+dynamic_padding = true
+
+# Transparent background.
+opacity = 0.8 
+
+# Make title "Terminal" instead of "alacritty".
+title = "Terminal"
+
+decorations = "Full"
+
+[font]
+#Default monospace font on kgx(gnome shell), I think it's great.
+normal = {family = "Source Code Pro"}
+
+size = 12
+
+offset = {x = 2, y = 0}
+
+[keyboard]
+bindings = [
+	{key = "T", mods = "Control", action = "CreateNewWindow"},
+	{key = "C", mods = "control|shift", action = "Copy"},
+	{key = "V", mods = "control|shift", action = "Paste"},
+	#{key = "Q", mods = "control", action = "SendSignal", signal = "Interrupt"},
+]
+
+[general]
+
+live_config_reload = true
+
+# import color config, which is from alacritty-theme on github.
+import = [
+    "~/.config/alacritty/themes/themes/ashes_dark.toml"
+]
