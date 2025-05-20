@@ -39,3 +39,5 @@ function proxy_off() {
 
 # Created by `pipx` on 2025-02-06 08:02:16
 export PATH="$PATH:/home/wnw231423/.local/bin"
+
+export PATH="$PATH:$HOME/.dotnet/tools"
